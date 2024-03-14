@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import HomeHeader from "./HomeHeader";
 import Specialty from "./Section/Specialty";
+import MedicalFacilities from "./Section/MedicalFacilities";
 class HomePage extends Component {
   render() {
 
@@ -10,7 +11,7 @@ class HomePage extends Component {
         <div>
             <HomeHeader />
             <Specialty />
-            <div style={{height: '300px'}}></div>
+            <MedicalFacilities />
         </div>
     );
   }
