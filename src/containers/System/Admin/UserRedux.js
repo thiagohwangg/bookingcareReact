@@ -7,6 +7,7 @@ import "../UserManage.scss";
 import { LANGUAGES } from "../../../utils";
 import * as actions from "../../../store/actions";
 import "./UserRedux.scss";
+import TableManageUser from "./TableManageUser";
 
 class UserRedux extends Component {
   constructor(props) {
@@ -164,7 +165,7 @@ class UserRedux extends Component {
 
               <div>
                 <div className="row">
-                  <div className="form-group col-md-3">
+                  <div className="form-group col-3">
                     <label htmlFor="inputEmail4">
                       <FormattedMessage id="manage-user.email" />
                     </label>
@@ -177,7 +178,7 @@ class UserRedux extends Component {
                       onChange={(e) => this.onChangeInput(e, "email")}
                     />
                   </div>
-                  <div className="form-group col-md-3">
+                  <div className="form-group col-3">
                     <label htmlFor="inputPassword4">
                       <FormattedMessage id="manage-user.password" />
                     </label>
@@ -247,7 +248,7 @@ class UserRedux extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="form-group col-md-3">
+                  <div className="form-group col-3">
                     <label htmlFor="gender">
                       <FormattedMessage id="manage-user.gender" />
                     </label>
@@ -268,7 +269,7 @@ class UserRedux extends Component {
                         })}
                     </select>
                   </div>
-                  <div className="form-group col-md-3">
+                  <div className="form-group col-3">
                     <label htmlFor="position">
                       <FormattedMessage id="manage-user.position" />
                     </label>
@@ -291,7 +292,7 @@ class UserRedux extends Component {
                         })}
                     </select>
                   </div>
-                  <div className="form-group col-md-3">
+                  <div className="form-group col-3">
                     <label htmlFor="roleId">
                       <FormattedMessage id="manage-user.role" />
                     </label>
@@ -314,7 +315,7 @@ class UserRedux extends Component {
                         })}
                     </select>
                   </div>
-                  <div className="form-group col-md-3">
+                  <div className="form-group col-3">
                     <label htmlFor="roleId">
                       <FormattedMessage id="manage-user.image" />
                     </label>
@@ -339,7 +340,8 @@ class UserRedux extends Component {
                   </div>
                 </div>
 
-                <div className="col-12 mt-3">
+                <div class="row">
+                <div className="col-12 my-3">
                   <button
                     type="submit"
                     className="btn btn-primary"
@@ -347,6 +349,11 @@ class UserRedux extends Component {
                   >
                     <FormattedMessage id="manage-user.save" />
                   </button>
+                </div>
+                <div className="col-12">
+        <TableManageUser />
+
+                </div>
                 </div>
               </div>
             </div>
