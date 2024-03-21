@@ -47,7 +47,8 @@
     "gender": "Giới tính",
     "position": "Chức danh",
     "role": "Vai trò",
-    "save": "Lưu người dùng",
+    "save": "Tạo người dùng",
+    "edit": "Lưu thay đổi",
     "image": "Ảnh đại diện"
   }
 }
